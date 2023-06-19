@@ -8,11 +8,11 @@
 
 int main(void)
 {
-	int i = 0;
+	int i = 00;
 
 	while (i <= 98)
 	{
-		int j = 0;
+		int j = 01;
 
 		while (j <= 99)
 		{
