@@ -27,6 +27,7 @@ void times_table(void)
 				_putchar(y / 10 + '0');
 				_putchar(y % 10 + '0');
 			}
+
 			if (z != 9)
 			{
 				_putchar(',');
