@@ -7,25 +7,23 @@
 
 int main(void)
 {
-	int n = 50;
+	int i = 0;
+	long j = i, k = 2;
 
-	int i;
-
-	unsigned long fib1 = 1;
-
-	unsigned long fib2 = 2;
-
-	printf("%lu, %lu, ", fib1, fib2);
-
-	for (i = 3; i <= n; i++)
+	while (i < 50)
 	{
-		unsigned long next_fib = fib1 + fib2;
-
-		printf("%lu, ", next_fib);
-		fib1 = fib2;
-		fib2 = next_fib;
+		if (i == 0)
+			printf("%ld", k);
+		else if ( i == 1)
+			printf("%ld", k);
+		else
+		{
+			k += j;
+			j = k - j;
+			printf(", %ld", k);
+		}
+		++i;
 	}
 	printf("\n");
-
 	return (0);
 }
