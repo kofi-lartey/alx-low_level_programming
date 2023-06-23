@@ -14,18 +14,11 @@ void more_numbers(void)
 
 		for (b = 0; b <= 14; b++)
 		{
+			if (b >= 10)
 			{
-				if (b == 10 || b == 11 || b == 12 || b == 13 || b == 14)
-				{
-					if (b > 9 && b <= 14)
-					{
-						_putchar(b / 10 + '0');
-						_putchar(b % 10 + '0');
-					}
-					continue;
-				}
+				_putchar('1');
 			}
-			_putchar(b + '0');
+			_putchar(b % 10 + '0');
 		}
 		_putchar('\n');
 	}
